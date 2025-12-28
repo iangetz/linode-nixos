@@ -14,7 +14,7 @@ Download the sample configuration.nix from this repo:
 	cd /mnt/etc/nixos
 	```
 
-2. Rename currently configuration.nix
+2. Rename current configuration.nix
 
 	```bash
 	mv configuration.nix configuration.nix.original
