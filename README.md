@@ -23,7 +23,8 @@ Download the sample configuration.nix from this repo:
 3. Download the configuration.nix from this repo to the current directory
 
 	```bash
-	curl -L -o configuration.nix https://raw.githubusercontent.com/iangetz/linode-nixos/main/configuration.nix
+	curl -L -o configuration.nix \
+	https://raw.githubusercontent.com/iangetz/linode-nixos/main/configuration.nix
 	```
 
 4. Inspect the original configuration.nix to confirm the `system.stateVersion` and note the version number (e.g. `"25.11"`).
