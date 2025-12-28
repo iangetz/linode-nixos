@@ -14,7 +14,7 @@ Download the sample configuration.nix from this repo:
 	cd /mnt/etc/nixos
 	```
 
-2. Rename currenty configuration.nix
+2. Rename currently configuration.nix
 
 	```bash
 	mv configuration.nix configuration.nix.original
@@ -33,7 +33,7 @@ Download the sample configuration.nix from this repo:
 	tail configuration.nix.original
 	```
 
-5. Edit downloded configuration.nix
+5. Edit downloaded configuration.nix
 
 	```bash
 	nano configuration.nix
@@ -44,7 +44,7 @@ Download the sample configuration.nix from this repo:
 	* `networking.hostName`
 	* `time.timeZone`
 	* `users.users.you` (i.e. replace `you` with your username and add your SSH public key)
-	* `ip protocol tcp tcp dport 22 ct state new ip saddr` (i.e. replace `1.1.1.1` with your connecting IP adress)
+	* `ip protocol tcp tcp dport 22 ct state new ip saddr` (i.e. replace `1.1.1.1` with your connecting IP address)
 	* `system.stateVersion` if it does not match the original configuration.nix
 
 ## Resume Instructions
