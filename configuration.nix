@@ -25,9 +25,6 @@
 	networking.hostName = "your-hostname";       # Change this: Add your hostname
 	time.timeZone = "UTC";                       # Change this: Select your time zone
 
-	# Enable modern Nix CLI and flakes support system-wide
-	nix.settings.experimental-features = [ "nix-command" "flakes" ];
-
 	# Delete any store paths that are older than 30 days and no longer referenced
 	nix.gc = {
 		automatic = true;
