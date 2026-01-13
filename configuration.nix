@@ -32,10 +32,11 @@
 		options = "--delete-older-than 30d";
 	};
 
-	# Reduce disk storage by deduplicating identify files in Nix store
+	# Reduce disk storage by deduplicating identical files in Nix store
 	nix.settings.auto-optimise-store = true;
 
-	# Change this: Define your user account and add your SSH public key
+	# Define your user account and add your SSH public key
+	# Change this: Replace any reference to 'you' with your info, don't forget to add your SSH public key
 	users.users.you = {
 		isNormalUser = true;
 		home = "/home/you";
@@ -50,7 +51,9 @@
 	# You can use https://search.nixos.org/ to find more packages (and options)
 	environment.systemPackages = with pkgs; [
 		btop
+		dnsutils
 		duf
+		git
 		mtr
 		ncdu
 		sysstat
@@ -94,7 +97,7 @@
 
 			# Allow SSH from known IPv4 addresses only (new connections)
 			ip protocol tcp tcp dport 22 ct state new ip saddr {
-				1.1.1.1,		# Change this: Add your connecting IP address
+				1.1.1.1,		# Change this: Replace with your connecting IP address
 			} limit rate 10/minute counter accept
 
 			# Drop all other SSH
