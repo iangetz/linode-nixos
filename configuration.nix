@@ -25,10 +25,6 @@
 	networking.hostName = "your-hostname";       # Change this: Add your hostname
 	time.timeZone = "UTC";                       # Change this: Select your time zone
 
-	# 'nixos-rebuild list-generations' uses git commit ID for configuration revision
-	# Uncomment once your configuration file is version controlled
-	# system.configurationRevision = self.rev or self.dirtyRev or null;
-
 	# Enable modern Nix CLI and flakes support system-wide
 	nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
